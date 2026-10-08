@@ -63,15 +63,15 @@ jobs:
 
       - name: Tag Docker Images
         run: |
-          docker tag practical_12-student-service:latest ghcr.io/${{ github.repository_owner }}/practical-12-student-service:latest
-          docker tag practical_12-course-service:latest ghcr.io/${{ github.repository_owner }}/practical-12-course-service:latest
-          docker tag practical_12-api-gateway:latest ghcr.io/${{ github.repository_owner }}/practical-12-api-gateway:latest
+          docker tag practical_12-student-service:latest ghcr.io/${{ github.repository_owner }}/Practical-12-student-service:latest
+          docker tag practical_12-course-service:latest ghcr.io/${{ github.repository_owner }}/Practical-12-course-service:latest
+          docker tag practical_12-api-gateway:latest ghcr.io/${{ github.repository_owner }}/Practical-12-api-gateway:latest
 
       - name: Push Docker Images
         run: |
-          docker push ghcr.io/${{ github.repository_owner }}/practical-12-student-service:latest
-          docker push ghcr.io/${{ github.repository_owner }}/practical-12-course-service:latest
-          docker push ghcr.io/${{ github.repository_owner }}/practical-12-api-gateway:latest
+          docker push ghcr.io/${{ github.repository_owner }}/Practical-12-student-service:latest
+          docker push ghcr.io/${{ github.repository_owner }}/Practical-12-course-service:latest
+          docker push ghcr.io/${{ github.repository_owner }}/Practical-12-api-gateway:latest
 
       - name: CI/CD Pipeline Successful
         run: echo "CI/CD pipeline completed successfully"
