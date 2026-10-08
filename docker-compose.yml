@@ -2,18 +2,21 @@ services:
 
   student-service:
     build: ./student-service
+    image: practical_12-student-service:latest
     container_name: student-service
     ports:
       - "8001:8000"
 
   course-service:
     build: ./course-service
+    image: practical_12-course-service:latest
     container_name: course-service
     ports:
       - "8002:8000"
 
   api-gateway:
     build: ./api-gateway
+    image: practical_12-api-gateway:latest
     container_name: api-gateway
     ports:
       - "8000:8000"
